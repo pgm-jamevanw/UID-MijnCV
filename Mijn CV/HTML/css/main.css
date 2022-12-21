@@ -1,0 +1,140 @@
+:root {
+  --max-width: 1200px;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  
+  --bg-color: #FFFFF5;
+  --custom-red: #C53030;
+  --custom-blue: #011627;
+  --custom-grey: #7F7F7F;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--custom-grey);
+  font-family: var(--font-poppins);
+}
+
+h2 {
+  color: var(--custom-red);
+}
+
+img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+}
+
+.header__info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.name {
+  color: var(--custom-red);
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.status {
+  color: var(--custom-grey);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.title {
+  color: var(--custom-blue);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.subtitle {
+  color: var(--custom-blue);
+  font-weight: 600;
+}
+
+.sub__header {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pf-picture {
+  width: 12.125rem;
+  height: 12.125rem;
+  
+  background-image: url(../assets/img/pexels-irina-iriser-759435-lowres.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  
+  border-radius: 50%;
+}
+
+.content__upper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 3.125rem;
+}
+
+.education {
+  width: 55%;
+}
+
+.work-experience {
+  width: 100%;
+}
+
+.education__item {
+  margin-bottom: 1.25rem;
+}
+
+.workex__items {
+  padding: 0;
+}
+
+.workex__item {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1.25rem;
+}
+
+.item__info {
+  margin-right: 1.875rem;
+  width: 25%;
+}
+
+.item__content {
+  margin-left: .9375rem;
+  width: 75%;
+}
+
+
+.content__bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3.125rem;
+}
+
+.skills {
+  width: 40%;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
