@@ -93,6 +93,40 @@ img {
   border-radius: 50%;
 }
 
+.address,
+.contact {
+  position: relative;
+}
+
+.address::before,
+.contact::before {
+  position: absolute;
+  
+  transform: translateX(-60px) translateY(3px);
+  
+  content: '';
+  
+  width: 1.5625rem;
+  height: 1.5625rem;
+  
+  border: .0625rem solid black;
+  border-radius: 50%;
+}
+
+.address::after,
+.contact::after {
+  position: absolute;
+  
+  transform: translateX(-48px) translateY(-44px);
+  
+  content: '';
+  
+  width: .0625rem;
+  height: 2.5rem;
+  
+  background-color: black;
+}
+
 .content__upper {
   display: flex;
   flex-wrap: nowrap;
@@ -108,6 +142,35 @@ img {
 
 .work-experience {
   width: 100%;
+  position: relative;
+}
+
+.work-experience h2::before,
+.interests__languages > h2::before {
+  position: absolute;
+  
+  transform: translateX(-100px) translateY(6px);
+  
+  content: '';
+  
+  width: 2.1875rem;
+  height: 2.1875rem;
+  
+  background-color: black;
+  border-radius: 50%;
+}
+
+.work-experience h2::after {
+  position: absolute;
+  
+  transform: translateX(-383px) translateY(20px);
+  
+  content: '';
+  
+  width: .0625rem;
+  height: 26.25rem;
+  
+  background-color: black;
 }
 
 .education__item {
@@ -123,6 +186,22 @@ img {
   flex-wrap: nowrap;
   
   margin-bottom: 3.125rem;
+}
+
+.workex__item::before {
+  position: absolute;
+  
+  transform: translateX(-95px);
+  
+  content: '';
+  
+  width: 1.5625rem;
+  height: 1.5625rem;
+  
+  border: .0625rem solid black;
+  border-radius: 50%;
+  
+  background-color: var(--bg-color);
 }
 
 .item__info {
@@ -171,6 +250,19 @@ img {
   width: 100%;
 }
 
+.interests__languages > h2::after {
+  position: absolute;
+  
+  transform: translateX(-250px) translateY(40px);
+  
+  content: '';
+  
+  width: .0625rem;
+  height: 37.5rem;
+  
+  background-color: black;
+}
+
 .interests__languages-list {
   list-style: none;
   padding-left: 0;
@@ -189,6 +281,22 @@ img {
   color: var(--custom-red);
   text-align: center;
   font-size: 1.25rem;
+}
+
+.languages__list::before {
+  position: absolute;
+  
+  transform: translateX(-96px) translateY(10px);
+  
+  content: '';
+  
+  width: 1.5625rem;
+  height: 1.5625rem;
+  
+  border: .0625rem solid black;
+  border-radius: 50%;
+  
+  background-color: var(--bg-color);
 }
 
 .languages {
