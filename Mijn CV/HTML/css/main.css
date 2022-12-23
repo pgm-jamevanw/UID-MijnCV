@@ -214,7 +214,6 @@ img {
   width: 75%;
 }
 
-
 .content__bottom {
   display: flex;
   flex-wrap: nowrap;
@@ -272,14 +271,20 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  gap: 7.9375rem;
+  justify-content: space-between;
   
   margin-bottom: 4.0625rem;
 }
 
+.interest__icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icon__title {
   color: var(--custom-red);
-  text-align: center;
   font-size: 1.25rem;
 }
 
@@ -317,10 +322,10 @@ img {
 .progress-bar-bg {
   position: absolute;
   right: 0;
-  transform: translateY(-29px);
+  transform: translateY(-24px);
 
   width: 27.375rem;
-  height: 1.4375rem;
+  height: 1rem;
   
   border-radius: 1.25rem;
   
@@ -332,10 +337,10 @@ img {
 .dutch .progress-bar {
   position: absolute;
   left: 14.9375rem;
-  transform: translateY(-29px);
+  transform: translateY(-24px);
 
   width: 26.0625rem;
-  height: 1.4375rem;
+  height: 1rem;
   
   border-radius: 1.25rem;
   
@@ -347,10 +352,10 @@ img {
 .english .progress-bar {
   position: absolute;
   left: 14.9375rem;
-  transform: translateY(-29px);
+  transform: translateY(-24px);
 
   width: 23.25rem;
-  height: 1.4375rem;
+  height: 1rem;
   
   border-radius: 1.25rem;
   
@@ -362,14 +367,20 @@ img {
 .french .progress-bar {
   position: absolute;
   left: 14.9375rem;
-  transform: translateY(-29px);
+  transform: translateY(-24px);
 
   width: 5.6875rem;
-  height: 1.4375rem;
+  height: 1rem;
   
   border-radius: 1.25rem;
   
   background-color: var(--custom-red);
   
   z-index: 1;
+}
+
+.star {
+  display: inline-block;
+  
+  transform: translateY(-1px);
 }
